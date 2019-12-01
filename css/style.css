@@ -5,13 +5,14 @@
 }
 
 body {
-  background-color: rgb(234, 245, 255);
+  background-color: rgb(77, 77, 77);
   font-family: sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  color: #fff;
 }
 
 .container {
@@ -29,17 +30,20 @@ body {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .social a {
+  font-family: Courier, sans-serif;
   text-transform: lowercase;
   margin: 5px 0;
   text-decoration: none;
-  color: #555555;
+  color: #b4b4b4;
   font-size: 18px;
   transition: 0.5s ease;
+  display: flex;
 }
 .social a:hover {
-  color: #2f55d3;
+  color: #00c0da;
 }
 
 .demos {
@@ -64,7 +68,10 @@ body {
   position: relative;
   width: 146px;
   height: 100px;
-  border: 2px solid #555555;
+  border: 1px solid #b4b4b4;
+}
+.demo:hover {
+  border-color: #00c0da;
 }
 .demo:hover .demo-modal {
   opacity: 1;
@@ -114,6 +121,6 @@ body {
 }
 
 .demo-links a:hover {
-  color: #2f55d3;
+  color: #00c0da;
   cursor: pointer;
 }
