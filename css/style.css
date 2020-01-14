@@ -39,7 +39,7 @@ body {
   text-decoration: none;
   color: #b4b4b4;
   font-size: 18px;
-  transition: 0.5s ease;
+  transition: color 0.5s ease;
   display: flex;
 }
 .social a:hover {
@@ -86,7 +86,7 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
   background-color: #000000cc;
   display: flex;
   align-items: center;
