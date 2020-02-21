@@ -63,12 +63,22 @@ body {
   flex-wrap: wrap;
 }
 
+@keyframes demo-card {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 .demo {
-  margin: 3px 10px;
+  margin: 5px;
   position: relative;
   width: 146px;
   height: 100px;
   border: 1px solid #b4b4b4;
+  animation: demo-card 0.3s;
 }
 .demo:hover {
   border-color: #00c0da;
