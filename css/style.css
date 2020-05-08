@@ -48,8 +48,10 @@ body {
 }
 
 .demos {
-  text-align: center;
+  width: 100%;
   margin-top: 10px;
+  padding: 0 1rem;
+  text-align: center;
 }
 .demos h2 {
   font-family: Roboto, sans-serif;
@@ -62,6 +64,21 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio {
+    flex-wrap: nowrap;
+    justify-content: start;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .demo {
+    min-width: 146px;
+    min-height: 100px;
+  }
 }
 
 @keyframes demo-card {
